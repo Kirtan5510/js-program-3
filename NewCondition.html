@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special</title>
+    <style>
+        .love:hover{
+            background-color: red;
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <b> Answer the question ...... please</b><br>
+    <input type="button" class="love" value="Get in" onclick="go()"/>
+    <p id="wish"></p>
+    <script>
+        function go(){
+				if(confirm("are you sure ?")){
+					alert("Yeahhh you said yes...!");
+                    var name=prompt("Can i get to know your name ?");
+				    alert(name + " kirtan :)");
+                    document.getElementById("wish").innerHTML = "Congratulations";
+				}
+				else{
+					alert("nooo <_> Its OK..!");
+				}
+			}
+    </script>
+</body>
+</html>
